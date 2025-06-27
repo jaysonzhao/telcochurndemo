@@ -21,3 +21,4 @@ bitsandbytes
 jupyter
 nbconvert
 lightgbm
+minio
