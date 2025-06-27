@@ -17,6 +17,8 @@ COPY . /app
 # Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
+RUN python 05-downloadmodels.py
+
 # Run the notebook to generate the synthetic data and train the models
 #RUN jupyter nbconvert \
 #      --to notebook \
