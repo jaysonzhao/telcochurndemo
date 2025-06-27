@@ -18,10 +18,10 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Run the notebook to generate the synthetic data and train the models
-RUN jupyter nbconvert \
-      --to notebook \
-      --execute 02-telco-churn-model-training.ipynb \
-      --output executed-02-telco-churn-model-training.ipynb
+#RUN jupyter nbconvert \
+#      --to notebook \
+#      --execute 02-telco-churn-model-training.ipynb \
+#      --output executed-02-telco-churn-model-training.ipynb
 
 # Expose port 35000 for Flask
 EXPOSE 35000
